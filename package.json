@@ -1,0 +1,25 @@
+{
+  "name": "team-generator",
+  "version": "1.0.0",
+  "description": "\"Generating team-profiles\"",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evanteems/team-generator.git"
+  },
+  "author": "Evan Teems",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evanteems/team-generator/issues"
+  },
+  "homepage": "https://github.com/evanteems/team-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
