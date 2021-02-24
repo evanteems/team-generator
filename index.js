@@ -16,8 +16,8 @@ const path = require("path");
 
 const render = require("./src/template");
 
-const output = path.resolve(__dirname, "output");
-const outputPath = path.join(output, "generator.html")
+const outputz = path.resolve(__dirname, "output");
+const outputPath = path.join(outputz, "Tteam.html")
 let teamArr = [];
 
 function addManagers() {
@@ -44,8 +44,8 @@ function addManagers() {
         },
     ]).then(res => {
         console.log(res);
-        const Manager = new Manager(res.managerName, res.managerId, res.managerEmail, res.officeNumber)
-        teamArr.push(Manager)
+        const manager = new Manager(res.managerName, res.managerId, res.managerEmail, res.officeNumber)
+        teamArr.push(manager)
         addtMembers();
 
     });
@@ -87,8 +87,8 @@ function addtMembers() {
                 }
             ])
             .then(res => {
-                const enginner = new Engineer(res.engineerName, res.engineerId, res.engineerEmail, res.engineerGithub)
-                teamArr.push(enginner)
+                const engineer = new Engineer(res.engineerName, res.engineerId, res.engineerEmail, res.engineerGithub)
+                teamArr.push(engineer)
                 console.log('Success! You have added an Engineer!');
                 addtMembers();
             })
@@ -136,8 +136,8 @@ addManagers();
 // Created team function shown here!!
 function buildPage()
 {
-    if (!fs.existsSync(ouptut)) {
-        fs.mkdirSync(output)
+    if (!fs.existsSync(outputz)) {
+        fs.mkdirSync(outputz)
     }
     fs.writeFileSync(outputPath, render(teamArr), 'utf-8');
-}
+};
