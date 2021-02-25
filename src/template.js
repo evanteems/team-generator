@@ -22,12 +22,12 @@ const bTeam = teamArr => {
         <div class="card col employee-card" style="width: 18erm;">
         <div class="b-card h-header">
         <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title"><h3><i class=fas fa-glass"></i>${engineer.getRole}</h3>
+        <h3 class="card-title"><h3><i class=fas fa-glass"></i>${engineer.getRole()}</h3>
         </div>
         <div class="b-card">
         <ul class="list-group list-flush">
         <li class="list-group-item">Employee ID: ${engineer.getId()}</li>
-        <li class="list-group-item">Email: <a href="mailto${engineer.getEmail()}">${engineer.getEmail}</a></li>
+        <li class="list-group-item">Email: <a href="mailto${engineer.getEmail()}">${engineer.getEmail()}</a></li>
         <li class="list-group-item">Github: <a href="https:github.com">${engineer.getGithub()}</a></li>
         </ul>
         </div>
@@ -41,12 +41,12 @@ const bTeam = teamArr => {
         <div class="card col employee-card" style="width: 18erm;">
         <div class="b-card h-header">
         <h2 class="card-title">${intern.getName()}</h2>
-        <h3 class="card-title"><h3><i class=fas fa-glass"></i>${intern.getRole}</h3>
+        <h3 class="card-title"><h3><i class=fas fa-glass"></i>${intern.getRole()}</h3>
         </div>
         <div class="b-card">
         <ul class="list-group list-flush">
         <li class="list-group-item">Employee ID: ${intern.getId()}</li>
-        <li class="list-group-item">Email: <a href="mailto${intern.getEmail()}">${intern.getEmail}</a></li>
+        <li class="list-group-item">Email: <a href="mailto${intern.getEmail()}">${intern.getEmail()}</a></li>
         <li class="list-group-item">Github: <a href="https:github.com">${intern.getSchool()}</a></li>
         </ul>
         </div>
@@ -62,7 +62,7 @@ const bTeam = teamArr => {
     html.push(teamArr.filter(Employee => Employee.getRole() == 'Intern')
     .map(intern=> bIntern(intern)))
 
-    html.push(teamArr.filter(Employee => Employee.getrole() == 'Engineer')
+    html.push(teamArr.filter(Employee => Employee.getRole() == 'Engineer')
     .map(engineer=> bEngineer(engineer)))
 
     console.log(html)
@@ -82,7 +82,7 @@ module.exports = Tteam => {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         intergrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcMr7x93voRxT2MZw1T" crossorigin="anonymus">
     <link rel="stylesheet" href="stlye.css">
-    <script src="https://kit.fontawesome.com/c502137733.js"></scrpit>
+    <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 <body>
     <div class="container-fluid">

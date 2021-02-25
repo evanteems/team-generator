@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: antiquewhite;
+    margin: 0;
+    line-height: 1.25;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px 10px;
+    background-color: rgb(161, 118, 24);
+    margin: 10px;
+}
+
+.h-header {
+    background-color: aqua;
+    margin: 10px;
+}
+
+body {
+    background: url("work.jpg") fixed center; 
+}
+
+.container-fluid {
+    background: url("work.jpg") fixed center;
+}
+
+.row {
+    background: url("work.jpg") fixed center;
+}
+
+.col-12 {
+    background: url("work.jpg") fixed center;
+}
+
+.container {
+    background: url("work.jpg") fixed center;
+}
