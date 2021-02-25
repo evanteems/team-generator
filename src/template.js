@@ -22,7 +22,7 @@ const bTeam = teamArr => {
         <div class="card col employee-card" style="width: 18erm;">
         <div class="b-card h-header">
         <h2 class="card-title">${engineer.getName()}</h2>
-        <h3 class="card-title"><h3><i class=fas fa-glass"></i>${engineer.getRole()}</h3>
+        <h3 class="card-title"><h3><i class="fas fa-glass"></i>${engineer.getRole()}</h3>
         </div>
         <div class="b-card">
         <ul class="list-group list-flush">
@@ -41,7 +41,7 @@ const bTeam = teamArr => {
         <div class="card col employee-card" style="width: 18erm;">
         <div class="b-card h-header">
         <h2 class="card-title">${intern.getName()}</h2>
-        <h3 class="card-title"><h3><i class=fas fa-glass"></i>${intern.getRole()}</h3>
+        <h3 class="card-title"><h3><i class="fas fa-glass"></i>${intern.getRole()}</h3>
         </div>
         <div class="b-card">
         <ul class="list-group list-flush">
@@ -81,7 +81,7 @@ module.exports = Tteam => {
     <title>The Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         intergrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcMr7x93voRxT2MZw1T" crossorigin="anonymus">
-    <link rel="stylesheet" href="stlye.css">
+    <link rel="stylesheet" href="./dist/style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 <body>
