@@ -6,12 +6,12 @@ https://github.com/evanteems
 A Manager that leads a team of both engineers and interns completing any tasks needed.
 
 # Table-of-Contents
--Installation
--Usage
--License
--Contribution
--Tests
--Questions
+- Installation
+- Usage
+- License
+- Contribution
+- Tests
+- Questions
 
 # Installation
 Install npm install inquirer, npm jest, and git init.
