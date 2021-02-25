@@ -47,7 +47,7 @@ const bTeam = teamArr => {
         <ul class="list-group list-flush">
         <li class="list-group-item">Employee ID: ${intern.getId()}</li>
         <li class="list-group-item">Email: <a href="mailto${intern.getEmail()}">${intern.getEmail()}</a></li>
-        <li class="list-group-item">Github: <a href="https:github.com">${intern.getSchool()}</a></li>
+        <li class="list-group-item">School: <a href="https:github.com">${intern.getSchool()}</a></li>
         </ul>
         </div>
         </div>
